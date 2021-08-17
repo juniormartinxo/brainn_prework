@@ -1,7 +1,7 @@
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
-  <h1>O Mapa de Marauder</h1>
+  <h1>O Mapa do Maroto</h1>
   <div class="mapa">
   <img src="./src/imgs/mapa_marauder_2.jpg" alt="Mapa do Salteador">
   </div>
