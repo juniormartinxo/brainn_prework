@@ -18,7 +18,7 @@ Uncaught SyntaxError: Cannot use import statement outside a module
 <p>Para solucionar o erro basta inserir o atributo type="module"</p>
 
 #### Exercício 03
-Olhe novamente para o console, e resolva o próximo erro:
+<p>Olhe novamente para o console, e resolva o próximo erro:</p>
 <code>
 main.js:3 Uncaught TypeError: Cannot set property 'innerHTML' of null
 </code>
