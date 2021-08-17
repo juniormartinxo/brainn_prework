@@ -22,10 +22,10 @@ Olhe novamente para o console, e resolva o próximo erro:
 <code>
 main.js:3 Uncaught TypeError: Cannot set property 'innerHTML' of null
 </code>
-Para solucionar bastava ou criar a div #app ou colocar o ID app em alguma div.
+<p>Para solucionar bastava ou criar a div #app ou colocar o ID app em alguma div.</p>
 
 #### Exercício 04
-Crie um link no HTML (fora da div .app), e adicione à ele um evento de clique. O clique nesse botão deverá alternar a visibilidade do .app: se o .app estiver visível, ele deverá ser escondido. Se estiver escondido, o clique deve exibí-lo.
+<p>Crie um link no HTML (fora da div .app), e adicione à ele um evento de clique. O clique nesse botão deverá alternar a visibilidade do .app: se o .app estiver visível, ele deverá ser escondido. Se estiver escondido, o clique deve exibí-lo.</p>
 
 <p>Para facilitar a visualização, minha filha me deu a ideia que eu implementasse o feitiço do Mapa do Maroto do filme Harry Potter e o Prisioneiro de Askaban, que ficou assim:</p>
 
