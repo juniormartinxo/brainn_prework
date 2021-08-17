@@ -1,13 +1,18 @@
 import './style.css';
 
 document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
+  <h1>O Mapa de Marauder</h1>
+  <div class="mapa">
+  <img src="./src/imgs/mapa_salteador.jpg" alt="Mapa do Salteador">
+  </div>
 `;
 
 const btnLink = document.querySelector('[data-js="btnLink"]');
 const appContainer = document.querySelector('#app');
 
 btnLink.addEventListener('click', () => {
-  appContainer.classList.remove('hide');
+  appContainer.toggleAttribute('hidden');
+  btnLink.innerHTML = appContainer.hasAttribute('hidden')
+    ? 'Eu juro solenemente que não vou fazer nada de bom.'
+    : 'Malfeito feito';
 });
