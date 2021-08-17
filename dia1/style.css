@@ -6,3 +6,22 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.sumidouro {
+  width: 200px;
+  margin: 50px auto;
+  /*border: 1px solid #e0e0e0;*/
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
