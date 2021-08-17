@@ -15,7 +15,7 @@ GET http://localhost:3000/main.js net::ERR_ABORTED 404 (Not Found)
 <code>
 Uncaught SyntaxError: Cannot use import statement outside a module
 </code>
-<p>Para solucionar o erro basta inserir o atributo type="module"</p>
+<p>Para solucionar o erro basta inserir o atributo type="module" na tag <script/></p>
 
 #### Exercício 03
 <p>Olhe novamente para o console, e resolva o próximo erro:</p>
