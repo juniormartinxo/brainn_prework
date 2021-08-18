@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "dia2",
   "version": "0.0.0",
   "scripts": {
