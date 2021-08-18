@@ -1,4 +1,4 @@
-# Desafio do dia 02
+# <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/three-oclock_1f552.png" height="36"/> Desafio do dia 02
 
 <p>No segundo dia fomos desafiados a implementart uma IMUTABILIDADE e uma HOF (Higher Order Function).</P>
 
