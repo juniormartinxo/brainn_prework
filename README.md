@@ -18,8 +18,8 @@
   <li>[x] Emmet</li>
   <li>[x] Yarn</li>  
 </ul>
-  <h4>Para usuários Windows:</h4>
-      <ul>
-        <li>[x] WSL com Ubuntu</li>
-      </ul>
-<p></p>
+<h4>Para usuários Windows:</h4>
+<ul>
+  <li>[x] WSL com Ubuntu</li>
+</ul>
+<h3>Instalação ViteJS</h3>
