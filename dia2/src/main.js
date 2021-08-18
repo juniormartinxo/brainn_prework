@@ -1,5 +1,6 @@
 import "../style.css";
 import "./immutable";
+import "./calculator";
 
 document.querySelector("#app").innerHTML = `
   <h1>Hello Vite!</h1>
