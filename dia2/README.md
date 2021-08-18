@@ -2,11 +2,11 @@
 
 <p>No segundo dia fomos desafiados a implementart uma IMUTABILIDADE e uma HOF (Higher Order Function).</P>
 
-#### Exercício 01
+### Exercício 01
 
 <p>Importe o arquivo <code>src/immutable.js</code> no <code>src/main.js</code>. Abra o arquivo e olhe o console do navegador. O resultado dos dois objetos deveria ser diferente. Faça a criação do segundo objeto de forma imutável.</p>
 
-#### Exercício 02 - HOF (Higher Order Function)
+### Exercício 02 - HOF (Higher Order Function)
 
 <p>Veja que, nesse arquivo, temos uma função <code>calculadora</code> sem implementação, e temos algumas variáveis que fazem a execução da calculadora. O desafio é fazer a implementação da calculadora, para que todos os valores no console resultem em <code>true</code>.</p>
 
@@ -18,5 +18,3 @@
   <li>Essa função de retorno deve retornar a chamada da primeira função que foi passada via argumento;</li>
   <li>Os valores a e b devem ser passados como parâmetro para essa função que está sendo executada.</li>
 </ul>
-
-<p>Para solucionar o erro basta inserir o atributo type="module" na tag <script/></p>
