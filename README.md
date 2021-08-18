@@ -23,3 +23,13 @@
   <li>[x] WSL com Ubuntu</li>
 </ul>
 <h3>Instalação ViteJS</h3>
+
+```
+yarn create vite
+```
+
+### Criar projeto com o Vite
+
+```
+yarn create vite dia1
+```
