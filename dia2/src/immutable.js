@@ -1,14 +1,20 @@
 const john = {
-  name: 'John',
-  surname: 'Doe',
+  name: "John",
+  surname: "Doe",
   age: 30,
-  hobbies: ['Surf', 'Design'],
+  hobbies: ["Surf", "Design"],
 };
 
-const jane = john;
+//const jane = john;
 
-jane.name = 'Jane';
-jane.hobbies.push('MuayThai', 'Programming');
+//jane.name = "Jane";
+//jane.hobbies.push("MuayThai", "Programming");
 
-console.log('John:', john);
-console.log('Jane:', jane);
+const jane = {
+  ...john,
+  name: "Jane",
+  hobbies: john.hobbies.concat(["MuayThai", "Programming"]),
+};
+
+console.log("John:", john);
+console.log("Jane:", jane);
