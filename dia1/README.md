@@ -1,4 +1,4 @@
-# <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/three-oclock_1f552.png" height="36"/> Desafio do dia 01
+# <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/three-oclock_1f552.png" height="32"/> Desafio do dia 01
 
 <p>No primeiro dia fomos desafiados a resolver dois erros, onde um era devido a inexistência do arquivo main.js e o outro a falta do atributo "type" na tag script do arquivo index.html.</P>
 
