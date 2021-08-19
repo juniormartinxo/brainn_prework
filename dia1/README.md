@@ -1,3 +1,32 @@
+<h2>Dia 01 [2021-08-16 - Segunda]</h2>
+<p><small><a href="https://github.com/brainnco/desafios-pre-work-b-academy/tree/main/dia1">Link para o desafio do dia 01</a></small></p>
+<p>No primeiro dia do Pré-work o professor Fernando Daciuk falou dos pré-requisitos necessárias para acompanhamento do pré-work, sendo:</p>
+<ul>
+  <li>[x] 01 (um) editor de texto | <strong>Escolhido:</strong> VSCode </li>
+  <li>[x] NVM e NodeJS</li>
+  <li>[x] Eslint</li>
+  <li>[x] Editorconfig</li>
+  <li>[x] Emmet</li>
+  <li>[x] Yarn</li>  
+</ul>
+<h4>Para usuários Windows:</h4>
+<ul>
+  <li>[x] WSL com Ubuntu</li>
+</ul>
+<h3>Instalação ViteJS</h3>
+
+```
+yarn create vite
+```
+
+### Criar projeto com o Vite
+
+```
+yarn create vite dia1
+```
+
+### 
+
 # <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/three-oclock_1f552.png" height="32"/> Desafio do dia 01
 
 <p>No primeiro dia fomos desafiados a resolver dois erros, onde um era devido a inexistência do arquivo main.js e o outro a falta do atributo "type" na tag script do arquivo index.html.</P>
