@@ -1,4 +1,4 @@
-<h2>Dia 01 [2021-08-16 - Segunda]</h2>
+<h2> ![artificial-intelligence](https://user-images.githubusercontent.com/4163340/130158095-bf30606f-af16-47f1-be1c-52293ceadb4c.png) Dia 01 [2021-08-16 - Segunda]</h2>
 <p>No primeiro dia do Pré-work o professor Fernando Daciuk falou dos pré-requisitos necessárias para acompanhamento do pré-work, sendo:</p>
 <ul>
   <li>[x] 01 (um) editor de texto | <strong>Escolhido:</strong> VSCode </li>
