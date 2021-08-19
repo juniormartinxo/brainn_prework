@@ -16,12 +16,12 @@ label {
 .input-container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 5px;
 }
 
-.inputName {
+input {
   width: 100%;
-  height: 40px;
+  height: 20px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -39,4 +39,42 @@ select {
   margin-bottom: 10px;
   font-size: 16px;
   color: #666;
+}
+
+button {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+table th {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  background: #f1f1f1;
+}
+
+table tbody tr {
+  border: 1px solid #ccc;
+  padding: 10px;
 }
