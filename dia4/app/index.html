@@ -8,6 +8,56 @@
   </head>
   <body>
     <div id="app"></div>
+    <form class="form-container" data-js="formCarro">
+      <h2>Carros</h2>
+      <div class="input-container">
+        <label for="">Url da imagem</label>
+        <input
+          type="text"
+          data-js="inputCarroUrlImage"
+          class="inputCarroUrlImage"
+        />
+      </div>
+      <div class="input-container">
+        <label for="">Marca/ Modelo</label>
+        <input
+          type="text"
+          data-js="inputCarroMarcaModelo"
+          class="inputCarroMarcaModelo"
+        />
+      </div>
+      <div class="input-container">
+        <label for="">Ano</label>
+        <input type="number" data-js="inputCarroAno" class="inputCarroAno" />
+      </div>
+      <div class="input-container">
+        <label for="">Placa</label>
+        <input type="text" data-js="inputCarroPlaca" class="inputCarroPlaca" />
+      </div>
+      <div class="input-container">
+        <label for="">Cor</label>
+        <input type="text" data-js="inputCarroCor" class="inputCarroCor" />
+      </div>
+
+      <div class="input-container">
+        <button type="button" data-js="btnCadastrarCarro">Enviar</button>
+      </div>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Imagem</th>
+          <th>Marca/Modelo</th>
+          <th>Ano</th>
+          <th>Placa</th>
+          <th>Cor</th>
+        </tr>
+      </thead>
+      <tbody data-js="tbodyCars">
+        <tr></tr>
+      </tbody>
+    </table>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
