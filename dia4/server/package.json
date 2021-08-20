@@ -1,12 +1,11 @@
 {
-  "name": "server",
-  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "start": "node app.js",
+    "dev": "npx nodemon app.js"
   },
-  "devDependencies": {
-    "vite": "^2.4.4"
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.17.1"
   }
 }
