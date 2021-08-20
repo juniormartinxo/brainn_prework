@@ -35,7 +35,6 @@ yarn create vite dia1
 ### Solução dos erros
 
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 01
-<details>
 <p>Resolver o erro que aparece no console:</p>
 
 ```
@@ -43,10 +42,15 @@ GET http://localhost:3000/main.js net::ERR_ABORTED 404 (Not Found)
 ```
 
 <p>Para solucionar o erro bastava criar o arquivo main.js</p>
-</details>
+
+<p>
+  <a href="https://www.twitch.tv/videos/1121188335?t=00h24m09s">
+    <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
+  </a>
+</p>
 
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 02
-<details>
+
 <p>Ao resolver o primeiro erro, resolva o segundo erro que deverá aparecer no console:</p>
 
 ```
@@ -54,10 +58,15 @@ Uncaught SyntaxError: Cannot use import statement outside a module
 ```
 
 <p>Para solucionar o erro basta inserir o atributo type="module" na tag <script/></p>
-</details>
+
+<p>
+  <a href="https://www.twitch.tv/videos/1121188335?t=00h27m35s">
+    <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
+  </a>
+</p>
 
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 03
-<details>
+
 <p>Olhe novamente para o console, e resolva o próximo erro:</p>
 
 ```
@@ -65,10 +74,15 @@ main.js:3 Uncaught TypeError: Cannot set property 'innerHTML' of null
 ```
 
 <p>Para solucionar bastava ou criar a div #app ou colocar o ID app em alguma div.</p>
-</details>
+
+<p>
+  <a href="https://www.twitch.tv/videos/1121188335?t=00h38m20s">
+    <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
+  </a>
+</p>
 
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 04
-<details>
+
 <p>Crie um link no HTML (fora da div .app), e adicione à ele um evento de clique. O clique nesse botão deverá alternar a visibilidade do .app: se o .app estiver visível, ele deverá ser escondido. Se estiver escondido, o clique deve exibí-lo.</p>
 
 <p>Para facilitar a visualização, minha filha me deu a ideia que eu implementasse o feitiço do Mapa do Maroto do filme Harry Potter e o Prisioneiro de Askaban, que ficou conforme as imagens abaixo, para implementar adicionei um addEventListener no botão e toggleAttribute na div#app:</p>
@@ -93,7 +107,11 @@ btnLink.addEventListener('click', () => {
     : 'Malfeito feito';
 });
 ```
-</details>
+<p>
+  <a href="https://www.twitch.tv/videos/1121188335?t=00h39m57s">
+    <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
+  </a>
+</p>
 
 ### Com a div #app desabilitada:
 
