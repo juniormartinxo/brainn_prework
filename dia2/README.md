@@ -5,13 +5,13 @@
 
 <p>No segundo dia fomos desafiados a implementart uma IMUTABILIDADE e uma HOF (Higher Order Function).</P>
 
-### Exercício 01
+### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 01
 
 <details>
 <p>Importe o arquivo <code>src/immutable.js</code> no <code>src/main.js</code>. Abra o arquivo e olhe o console do navegador. O resultado dos dois objetos deveria ser diferente. Faça a criação do segundo objeto de forma imutável.</p>
 </details>
 
-### Exercício 02 - HOF (Higher Order Function)
+### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 02 - HOF (Higher Order Function)
 
 <details>
 <p>Veja que, nesse arquivo, temos uma função <code>calculadora</code> sem implementação, e temos algumas variáveis que fazem a execução da calculadora. O desafio é fazer a implementação da calculadora, para que todos os valores no console resultem em <code>true</code>.</p>
