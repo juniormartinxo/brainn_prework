@@ -26,7 +26,7 @@ yarn create vite dia1
 
 ### 
 
-# <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/three-oclock_1f552.png" height="32"/> Desafio do dia 01
+# <img src="https://user-images.githubusercontent.com/4163340/130159194-488e54e5-a6e0-49d1-9b9c-7b78d232ba70.png" height="32"/> Desafio do dia 01
 
 <p>🔗 <a href="https://github.com/brainnco/desafios-pre-work-b-academy/tree/main/dia1">Link para o desafio do dia 01</a></p>
 
