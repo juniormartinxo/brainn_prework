@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "dia5",
+  "name": "app",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
