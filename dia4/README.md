@@ -2,4 +2,7 @@
 
 <h2><img src="https://user-images.githubusercontent.com/4163340/130159194-488e54e5-a6e0-49d1-9b9c-7b78d232ba70.png" height="32"/> Desafio do dia 04</h2
 
-https://github.com/brainnco/desafios-pre-work-b-academy/tree/main/dia4
+Link do desafio: https://github.com/brainnco/desafios-pre-work-b-academy/tree/main/dia4
+
+<h3>Resultado final do desafio</h3>
+<img src="https://user-images.githubusercontent.com/4163340/130324500-ad0061f8-9afc-4cdc-b4f2-eaf4575fd846.png"/>
