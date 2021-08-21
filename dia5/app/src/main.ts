@@ -8,7 +8,7 @@ const table = document.querySelector('[data-js="table"]');
 
 const getFormElement =
   (event: { target: HTMLElement }) => (elementName: string) => {
-    return (event.target as HTMLElement).elements[elementName];
+    return event.target.elements[elementName];
   };
 
 const elementTypes = {
