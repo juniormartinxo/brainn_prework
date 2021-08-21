@@ -5,4 +5,4 @@
 Link do desafio: https://github.com/brainnco/desafios-pre-work-b-academy/tree/main/dia4
 
 <h3>Resultado final do desafio</h3>
-<img src="https://user-images.githubusercontent.com/4163340/130324500-ad0061f8-9afc-4cdc-b4f2-eaf4575fd846.png"/>
+<img src="https://user-images.githubusercontent.com/4163340/130324839-282188b2-c1bf-4c22-84e2-2e8012c95a99.gif" width=800/>
