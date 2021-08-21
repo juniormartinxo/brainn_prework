@@ -1,63 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="Yearnymous"
+    />
+    <title>Cadastro de veículos</title>
   </head>
+
   <body>
     <div id="app"></div>
-    <form class="form-container" data-js="formCarro">
-      <h2>Carros</h2>
-      <div class="input-container">
-        <label for="">Url da imagem</label>
-        <input
-          type="text"
-          data-js="inputCarroUrlImage"
-          class="inputCarroUrlImage"
-        />
-      </div>
-      <div class="input-container">
-        <label for="">Marca/ Modelo</label>
-        <input
-          type="text"
-          data-js="inputCarroMarcaModelo"
-          class="inputCarroMarcaModelo"
-        />
-      </div>
-      <div class="input-container">
-        <label for="">Ano</label>
-        <input type="number" data-js="inputCarroAno" class="inputCarroAno" />
-      </div>
-      <div class="input-container">
-        <label for="">Placa</label>
-        <input type="text" data-js="inputCarroPlaca" class="inputCarroPlaca" />
-      </div>
-      <div class="input-container">
-        <label for="">Cor</label>
-        <input type="text" data-js="inputCarroCor" class="inputCarroCor" />
-      </div>
+    <div class="container">
+      <form class="form-container" data-js="formCar">
+        <h2>Cadastro de veículos</h2>
+        <div class="row">
+          <div class="input-container col s4">
+            <label for="">Url da imagem</label>
+            <input
+              type="text"
+              data-js="inputCarUrlImage"
+              class="inputCarUrlImage deeppink-border"
+            />
+          </div>
+          <div class="input-container col s4">
+            <label for="">Marca</label>
+            <input
+              type="text"
+              data-js="inputCarBrand"
+              class="inputCarBrand deeppink-border"
+            />
+          </div>
+          <div class="input-container col s4">
+            <label for="">Modelo</label>
+            <input
+              type="text"
+              data-js="inputCarModel"
+              class="inputCarModel deeppink-border"
+            />
+          </div>
+        </div>
 
-      <div class="input-container">
-        <button type="button" data-js="btnCadastrarCarro">Enviar</button>
-      </div>
-    </form>
+        <div class="row">
+          <div class="input-container col s4">
+            <label for="">Ano</label>
+            <input
+              type="number"
+              data-js="inputCarYear"
+              class="inputCarYear deeppink-border"
+            />
+          </div>
+          <div class="input-container col s4">
+            <label for="">Placa</label>
+            <input
+              type="text"
+              data-js="inputCarPlate"
+              class="inputCarPlate deeppink-border"
+            />
+          </div>
+          <div class="input-container col s4">
+            <label for="">Color</label><br />
+            <input type="color" data-js="inputCarColor" class="inputCarColor" />
+          </div>
+        </div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Imagem</th>
-          <th>Marca/Modelo</th>
-          <th>Ano</th>
-          <th>Placa</th>
-          <th>Cor</th>
-        </tr>
-      </thead>
-      <tbody data-js="tbodyCars">
-        <tr></tr>
-      </tbody>
-    </table>
-    <script type="module" src="/main.js"></script>
+        <div class="input-container">
+          <button type="button" class="btn deeppink col" data-js="btnInsertCar">
+            Enviar
+          </button>
+        </div>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Imagem</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Plate</th>
+            <th>Color</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody data-js="tbodyCars">
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

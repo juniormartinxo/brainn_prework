@@ -1,0 +1,188 @@
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+input[type='color'] {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+table {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+thead {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+th {
+  border-radius: 0 !important;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.img-car {
+  height: 48px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.box-color {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/*color*/
+.deeppink {
+  background-color: #ff3366 !important;
+}
+
+.deeppink-text {
+  color: #ff3366 !important;
+}
+
+.deeppink.lighten-5 {
+  background-color: #ffd2dd !important;
+}
+
+.deeppink-text.text-lighten-5 {
+  color: #ffd2dd !important;
+}
+
+.deeppink.lighten-4 {
+  background-color: #fd9fb6 !important;
+}
+
+.deeppink-text.text-lighten-4 {
+  color: #fd9fb6 !important;
+}
+
+.deeppink.lighten-3 {
+  background-color: #fc688d !important;
+}
+
+.deeppink-text.text-lighten-3 {
+  color: #fc688d !important;
+}
+
+.deeppink.lighten-2 {
+  background-color: #fc3f6e !important;
+}
+
+.deeppink-text.text-lighten-2 {
+  color: #fc3f6e !important;
+}
+
+.deeppink.lighten-1 {
+  background-color: #fc1f56 !important;
+}
+
+.deeppink-text.text-lighten-1 {
+  color: #fc1f56 !important;
+}
+
+.deeppink.darken-1 {
+  background-color: rgb(168, 12, 51) !important;
+}
+
+.deeppink-text.text-darken-1 {
+  color: rgb(168, 12, 51) !important;
+}
+
+.deeppink.darken-2 {
+  background-color: rgb(136, 7, 39) !important;
+}
+
+.deeppink-text.text-darken-2 {
+  color: rgb(136, 7, 39) !important;
+}
+
+.deeppink.darken-3 {
+  background-color: rgb(107, 3, 29) !important;
+}
+
+.deeppink-text.text-darken-3 {
+  color: rgb(107, 3, 29) !important;
+}
+
+.deeppink.darken-4 {
+  background-color: #1a237e !important;
+}
+
+.deeppink-text.text-darken-4 {
+  color: #1a237e !important;
+}
+
+.deeppink.accent-1 {
+  background-color: #8c9eff !important;
+}
+
+.deeppink-text.text-accent-1 {
+  color: #8c9eff !important;
+}
+
+.deeppink.accent-2 {
+  background-color: #536dfe !important;
+}
+
+.deeppink-text.text-accent-2 {
+  color: #536dfe !important;
+}
+
+.deeppink.accent-3 {
+  background-color: #3d5afe !important;
+}
+
+.deeppink-text.text-accent-3 {
+  color: #3d5afe !important;
+}
+
+.deeppink.accent-4 {
+  background-color: #304ffe !important;
+}
+
+.deeppink-text.text-accent-4 {
+  color: #304ffe !important;
+}
+
+input.deeppink-border:not([type]):focus:not([readonly]),
+input.deeppink-border[type='text']:not(.browser-default):focus:not([readonly]),
+input.deeppink-border[type='password']:not(.browser-default):focus:not([readonly]),
+input.deeppink-border[type='email']:not(.browser-default):focus:not([readonly]),
+input.deeppink-border[type='url']:not(.browser-default):focus:not([readonly]),
+input.deeppink-border[type='time']:not(.browser-default):focus:not([readonly]),
+input.deeppink-border[type='date']:not(.browser-default):focus:not([readonly]),
+input.deeppink-border[type='datetime']:not(.browser-default):focus:not([readonly]),
+input.deeppink-border[type='datetime-local']:not(.browser-default):focus:not([readonly]),
+input.deeppink-border[type='tel']:not(.browser-default):focus:not([readonly]),
+input.deeppink-border[type='number']:not(.browser-default):focus:not([readonly]),
+input.deeppink-border[type='search']:not(.browser-default):focus:not([readonly]),
+textarea.deeppink-border.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ff3366;
+  -webkit-box-shadow: 0 1px 0 0 #ff3366;
+  box-shadow: 0 1px 0 0 #ff3366;
+}
