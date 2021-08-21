@@ -1,6 +1,8 @@
 <h2><img src="https://user-images.githubusercontent.com/4163340/130160199-7b021ab6-8d96-4955-b41c-4506968afe98.png"/> Dia 02 [2021-08-17 - Terça]</h2>
 <p>No segundo dia do Pré-work o professor Fernando Daciuk iniciou corrigindo os exercícios propostos do dia 01.</p>
 
+<p>🔗 <a href="https://github.com/brainnco/desafios-pre-work-b-academy/tree/main/dia2">Link dos desafios do segundo dia</a></p>
+
 ## <img src="https://user-images.githubusercontent.com/4163340/130159194-488e54e5-a6e0-49d1-9b9c-7b78d232ba70.png" height="32"/> Desafio do dia 02
 
 <p>No segundo dia fomos desafiados a implementart uma IMUTABILIDADE e uma HOF (Higher Order Function).</P>
