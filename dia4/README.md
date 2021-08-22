@@ -40,6 +40,14 @@ ele para rodar de novo (com `yarn start`).
 No desafio anterior, você criou um formulário para cadastro de carros. Copie o
 formulário e a tabela do exercício anterior para o arquivo `index.html`.
 
+<p>
+  <a href="https://www.twitch.tv/videos/1124227767?t=00h23m37s">
+    <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
+  </a>
+</p>
+
+<hr/>
+
 
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 02
 
@@ -52,6 +60,14 @@ Se não houverem carros cadastrados, o resultado será um array vazio.
 
 Mostre na tabela os carros cadastrados, e, se não houverem carros, mostre na tabela
 apenas uma linha com o texto: "Nenhum carro encontrado".
+
+<p>
+  <a href="https://www.twitch.tv/videos/1124227767?t=00h31m03s">
+    <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
+  </a>
+</p>
+
+<hr/>
 
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 03
 
@@ -94,6 +110,14 @@ do navegador.
 Todos os campos são obrigatórios, então um outro possível erro vai acontecer 
 quando você tentar enviar algum campo vazio.
 
+<p>
+  <a href="https://www.twitch.tv/videos/1124227767?t=01h23m29s">
+    <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
+  </a>
+</p>
+
+<hr/>
+
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 04
 
 Não falamos nas aulas, mas nós temos alguns outros métodos HTTP além do `GET` e do `POST`.
@@ -108,6 +132,15 @@ passando a placa do carro que deverá ser deletado.
 Para fazer a exclusão à partir da nossa interface, crie uma nova coluna na tabela, onde cada carro terá
 seu próprio botão de "Excluir". Ao clicar nesse botão, o request com a deleção deverá ser feito,
 e se o request retornar com sucesso, a linha da tabela que contém o carro deverá ser excluída.
+
+<p>
+  <a href="https://www.twitch.tv/videos/1124227767?t=01h44m43s">
+    <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
+  </a>
+</p>
+
+<hr/>
+
 
 <h3>Resultado final do desafio</h3>
 
