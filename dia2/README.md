@@ -10,7 +10,7 @@
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 01
 <p>Importe o arquivo <code>src/immutable.js</code> no <code>src/main.js</code>. Abra o arquivo e olhe o console do navegador. O resultado dos dois objetos deveria ser diferente. Faça a criação do segundo objeto de forma imutável.</p>
 <p>
-  <a href="https://www.twitch.tv/videos/1121188335?t=00h24m09s">
+  <a href="https://www.twitch.tv/videos/1122210883?t=00h29m00s">
     <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
   </a>
 </p>
