@@ -67,7 +67,7 @@ router.post('/', checkBody, checkAlreadyRegistered, (req, res) => {
 });
 
 router.delete('/', (req, res) => {
-  delete data[req.body.plate.toUpperCase()];
+  delete data[req.body.id];
   res.json({
     message: `O carro com placa ${req.body.plate} foi removido com sucesso`,
   });

@@ -39,7 +39,7 @@ btnInsertCar.addEventListener('click', async () => {
 
     formCar.reset();
   } catch (e) {
-    alertMessage('Algo deu errado!');
+    alertMessage('Algo deu errado ao tentar inserir o veículo!');
   }
 });
 
@@ -88,21 +88,35 @@ function createRowCar(dataCars) {
   }
 }
 
-function removeRowCar(e) {
+async function removeRowCar(e) {
   const btnDelRowCar = e.target;
   const id = e.target.dataset.id;
   const rowCar = document.querySelector(`tr[data-id="${id}"]`);
 
-  tbodyCars.removeChild(rowCar);
+  try {
+    const result = await del(url, { id });
 
-  btnDelRowCar.removeEventListener('click', removeRowCar);
+    if (result.error) {
+      //console.log('erro ao deletar', result.message);
+      alertMessage(result.message);
+      return;
+    }
 
-  // Verifica se existe ainda alguma linha com carro inserido
-  const verifyRowCar = document.querySelector('.rowCar');
+    tbodyCars.removeChild(rowCar);
 
-  // Se não existir, exibe a linha de espaço vazio
-  if (verifyRowCar === null) {
-    createRowCarEmpty();
+    btnDelRowCar.removeEventListener('click', removeRowCar);
+
+    // Verifica se existe ainda alguma linha com carro inserido
+    const verifyRowCar = document.querySelector('.rowCar');
+
+    // Se não existir, exibe a linha de espaço vazio
+    if (verifyRowCar === null) {
+      createRowCarEmpty();
+    }
+
+    alertMessage('Veículo removido com sucesso!');
+  } catch (e) {
+    alertMessage('Algo deu errado ao tentar excluir o veículo!');
   }
 }
 
