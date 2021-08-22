@@ -40,17 +40,22 @@ function areAllFieldsValid(body) {
 }
 
 function checkAlreadyRegistered(req, res, next) {
-  if (typeof data[req.body.plate.toUpperCase()] !== 'undefined') {
-    return res.status(400).json({
-      error: true,
-      message: `Já existe um carro cadastrado com a placa ${req.body.plate}`,
-    });
-  }
+  const infoCar = Object.values(req.body);
+  const dataValores = Object.values(data);
+
+  dataValores.filter(element => {
+    if (infoCar[5].toUpperCase() === element.plate.toUpperCase()) {
+      return res.status(400).json({
+        error: true,
+        message: `Já existe um carro cadastrado com a placa ${req.body.plate.toUpperCase()}`,
+      });
+    }
+  });
+
   next();
 }
 
 router.post('/', checkBody, checkAlreadyRegistered, (req, res) => {
-  console.log(req.body);
   data[req.body.id] = {
     id: req.body.id,
     image: req.body.image,
