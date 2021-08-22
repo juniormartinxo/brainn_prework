@@ -14,27 +14,26 @@
 
 <p align="center">
   <a href="https://www.twitch.tv/videos/1120192927">
-    <img src="https://user-images.githubusercontent.com/4163340/130167240-3b96596d-d45f-49e1-8dc1-a9bec19ace56.png"/>
-  </a>
-  
+    <img src="https://user-images.githubusercontent.com/4163340/130167240-3b96596d-d45f-49e1-8dc1-a9bec19ace56.png" height="48"/>
+  </a> 
   <a href="https://www.twitch.tv/videos/1121188335">
-    <img src="https://user-images.githubusercontent.com/4163340/130167242-3983f181-6762-441b-8083-3728e656e1b2.png"/>
+    <img src="https://user-images.githubusercontent.com/4163340/130167242-3983f181-6762-441b-8083-3728e656e1b2.png" height="48"/>
   </a>
   
   <a href="https://www.twitch.tv/videos/1122210883">
-    <img src="https://user-images.githubusercontent.com/4163340/130167244-59aaa6e0-6f78-40f7-a098-a3f084c81830.png"/>
+    <img src="https://user-images.githubusercontent.com/4163340/130167244-59aaa6e0-6f78-40f7-a098-a3f084c81830.png" height="48"/>
   </a>
   
   <a href="https://www.twitch.tv/videos/1123241660">
-    <img src="https://user-images.githubusercontent.com/4163340/130167245-97c38c96-e12b-4d07-b6ef-a33faa8e6171.png"/>
+    <img src="https://user-images.githubusercontent.com/4163340/130167245-97c38c96-e12b-4d07-b6ef-a33faa8e6171.png" height="48"/>
   </a>
   
   <a href="https://www.twitch.tv/videos/1124227767">
-    <img src="https://user-images.githubusercontent.com/4163340/130167246-d02570bf-1530-4a70-8e9c-68a81ec60e69.png"/>
+    <img src="https://user-images.githubusercontent.com/4163340/130167246-d02570bf-1530-4a70-8e9c-68a81ec60e69.png" height="48"/>
   </a>
   
   <a href="https://www.twitch.tv/videos/1125262119">
-    <img src="https://user-images.githubusercontent.com/4163340/130359346-64e82699-2219-47e8-872b-b87393ef3926.png"/>
+    <img src="https://user-images.githubusercontent.com/4163340/130359346-64e82699-2219-47e8-872b-b87393ef3926.png" height="48"/>
   </a>
 
 
