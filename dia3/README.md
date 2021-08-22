@@ -71,11 +71,3 @@ do formulário (campo imagem).
     <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
   </a>
 </p>
-
-<hr/>
-
-<p>
-  <a href="https://www.twitch.tv/videos/1121188335?t=00h27m35s">
-    <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
-  </a>
-</p>
