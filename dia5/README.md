@@ -1,6 +1,6 @@
 <h2><img src="https://user-images.githubusercontent.com/4163340/130160199-7b021ab6-8d96-4955-b41c-4506968afe98.png"/> Dia 05 [2021-08-21 - Sexta-feira]</h2>
 
-<h2><img src="https://user-images.githubusercontent.com/4163340/130159194-488e54e5-a6e0-49d1-9b9c-7b78d232ba70.png" height="32"/> Desafio do dia 01</h2
+<h2><img src="https://user-images.githubusercontent.com/4163340/130159194-488e54e5-a6e0-49d1-9b9c-7b78d232ba70.png" height="32"/> Desafio do dia 05</h2
 
 <a href="https://github.com/brainnco/desafios-pre-work-b-academy/tree/main/dia5">Desafio 05</a>
 
