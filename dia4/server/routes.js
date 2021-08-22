@@ -1,6 +1,16 @@
 const express = require('express');
 const router = express.Router();
+const fs = require('fs');
+
 let data = {};
+
+fs.readFile('./cars_empty.json', 'utf8', function (err, dataJson) {
+  if (err) {
+    return console.log('Erro ao ler arquivo ' + err);
+  }
+
+  data = JSON.parse(dataJson); // faz o parse para json
+});
 
 router.get('/', (req, res) => {
   res.json(Object.values(data));
@@ -18,8 +28,10 @@ function checkBody(req, res, next) {
 
 function areAllFieldsValid(body) {
   const fields = [
+    body.id,
     body.image,
-    body.brandModel,
+    body.brand,
+    body.model,
     body.year,
     body.plate,
     body.color,
@@ -39,8 +51,10 @@ function checkAlreadyRegistered(req, res, next) {
 
 router.post('/', checkBody, checkAlreadyRegistered, (req, res) => {
   data[req.body.plate.toUpperCase()] = {
+    id: req.body.id,
     image: req.body.image,
-    brandModel: req.body.brandModel,
+    brand: req.body.brand,
+    model: req.body.model,
     year: req.body.year,
     plate: req.body.plate,
     color: req.body.color,

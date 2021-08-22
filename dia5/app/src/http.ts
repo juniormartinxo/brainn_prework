@@ -1,9 +1,11 @@
-const request = (url: string, options: RequestInit) =>
+const request = (url: string, options?: RequestInit) =>
   fetch(url, options)
     .then((r) => r.json())
     .catch((e) => ({ error: true, message: e.message }));
 
-const createRequest = (method: string) => (url: string, data: string) =>
+type Methods = "POST" | "DELETE";
+
+const createRequest = (method: Methods) => (url: string, data: string) =>
   request(url, {
     method,
     headers: {
@@ -12,6 +14,6 @@ const createRequest = (method: string) => (url: string, data: string) =>
     body: JSON.stringify(data),
   });
 
-export const get = (url: string) => request(url, {});
+export const get = request;
 export const post = createRequest("POST");
 export const del = createRequest("DELETE");

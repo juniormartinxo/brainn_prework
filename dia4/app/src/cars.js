@@ -1,60 +1,106 @@
+import { get, post, del } from './http';
+
 const tbodyCars = document.querySelector('[data-js="tbodyCars"]');
 const formCar = document.querySelector('[data-js="formCar"]');
 const btnInsertCar = document.querySelector('[data-js="btnInsertCar"]');
-const inputCarUrlImage = document.querySelector('[data-js="inputCarUrlImage"]');
-const inputCarBrand = document.querySelector('[data-js="inputCarBrand"]');
-const inputCarModel = document.querySelector('[data-js="inputCarModel"]');
-const inputCarYear = document.querySelector('[data-js="inputCarYear"]');
-const inputCarPlate = document.querySelector('[data-js="inputCarPlate"]');
-const inputCarColor = document.querySelector('[data-js="inputCarColor"]');
+const image = document.querySelector('[data-js="inputCarUrlImage"]');
+const brand = document.querySelector('[data-js="inputCarBrand"]');
+const model = document.querySelector('[data-js="inputCarModel"]');
+const year = document.querySelector('[data-js="inputCarYear"]');
+const plate = document.querySelector('[data-js="inputCarPlate"]');
+const color = document.querySelector('[data-js="inputCarColor"]');
+
+const url = 'http://localhost:3333/cars';
 
 btnInsertCar.addEventListener('click', () => {
+  const randomId = Math.trunc(Math.random() * 1e9);
   const tbodyCarsHtml = tbodyCars.innerHTML;
 
-  createRowCar();
+  const dataCars = {
+    id: randomId,
+    image: image.value,
+    brand: brand.value,
+    model: model.value,
+    year: year.value,
+    plate: plate.value,
+    color: color.value,
+  };
+
+  createRowCar(dataCars);
 
   formCar.reset();
 });
 
-function createRowCar() {
-  const randomId = Math.trunc(Math.random() * 1e9);
+function createRowCar(dataCars) {
   const infoCar = [
-    { type: 'id', value: randomId },
-    { type: 'urlImage', value: inputCarUrlImage.value },
-    { type: 'brand', value: inputCarBrand.value },
-    { type: 'model', value: inputCarModel.value },
-    { type: 'year', value: inputCarYear.value },
-    { type: 'plate', value: inputCarPlate.value },
-    { type: 'color', value: inputCarColor.value },
+    { type: 'id', value: dataCars.id },
+    {
+      type: 'image',
+      value: {
+        src: dataCars.image,
+        brand: dataCars.brand,
+        model: dataCars.model,
+      },
+    },
+    { type: 'text', value: dataCars.brand },
+    { type: 'text', value: dataCars.model },
+    { type: 'text', value: dataCars.year },
+    { type: 'text', value: dataCars.plate },
+    { type: 'color', value: dataCars.color },
   ];
 
-  const btnDeleteCar = createButtonDeleteCar(randomId);
+  console.log(infoCar);
+
+  const btnDeleteCar = createButtonDeleteCar(dataCars.id);
 
   const rowCar = document.createElement('tr');
-  rowCar.dataset.id = randomId;
+  rowCar.dataset.id = dataCars.id;
 
   infoCar.map(info => {
     rowCar.appendChild(createColumnCar(info.type, info.value));
   });
 
-  const trBtnDeleteCar = document.createElement('td');
-  trBtnDeleteCar.classList.add('center');
-  trBtnDeleteCar.appendChild(btnDeleteCar);
+  const tdBtnDeleteCar = document.createElement('td');
+  tdBtnDeleteCar.classList.add('center');
+  tdBtnDeleteCar.appendChild(btnDeleteCar);
 
-  rowCar.appendChild(trBtnDeleteCar);
+  rowCar.appendChild(tdBtnDeleteCar);
 
   tbodyCars.appendChild(rowCar);
 }
 
-function createButtonDeleteCar(randomId) {
+function removeRowCar(e) {
+  const btnDelRowCar = e.target;
+  const id = e.target.dataset.id;
+  const rowCar = document.querySelector(`tr[data-id="${id}"]`);
+
+  tbodyCars.removeChild(rowCar);
+
+  btnDelRowCar.removeEventListener('click', removeRowCar);
+}
+
+function createRowCarEmpty() {
+  const rowCarEmpty = document.createElement('tr');
+  const colCarEmpty = document.createElement('td');
+  colCarEmpty.colSpan = 8;
+  colCarEmpty.innerHTML = `Nenhum carro encontrado!`;
+  colCarEmpty.classList.add('center');
+  colCarEmpty.classList.add('deeppink-text');
+  colCarEmpty.classList.add('strong');
+
+  rowCarEmpty.appendChild(colCarEmpty);
+  tbodyCars.appendChild(rowCarEmpty);
+}
+
+function createButtonDeleteCar(id) {
   const btnDeleteCar = document.createElement('button');
 
   btnDeleteCar.classList.add('btnDeleteCar');
   btnDeleteCar.classList.add('btn');
   btnDeleteCar.classList.add('btn-x');
   btnDeleteCar.classList.add('deeppink');
-  btnDeleteCar.dataset.id = randomId;
-  btnDeleteCar.innerHTML = `<i class="far fa-trash-alt far-sm">`;
+  btnDeleteCar.dataset.id = id;
+  btnDeleteCar.innerHTML = `<i class="far fa-trash-alt far-sm" data-id="${id}">`;
 
   btnDeleteCar.addEventListener('click', removeRowCar);
 
@@ -65,18 +111,8 @@ function createBoxColorCar(color) {
   return `<span style="background-color: ${color}" class="box-color"></span>`;
 }
 
-function createImageCar(url) {
-  return `<img class="img-car" src="${url}"/>`;
-}
-
-function removeRowCar(e) {
-  const btnDelRowCar = e.target;
-  const id = btnDelRowCar.dataset.id;
-  const rowCar = document.querySelector(`tr[data-id="${id}"]`);
-
-  tbodyCars.removeChild(rowCar);
-
-  btnDelRowCar.removeEventListener('click', removeRowCar);
+function createImageCar(url, brand, model) {
+  return `<img class="img-car" src="${url}" alt="${brand} - ${model}" title="${brand} - ${model}"/>`;
 }
 
 function createColumnCar(type, value) {
@@ -84,8 +120,8 @@ function createColumnCar(type, value) {
   td.classList.add('center');
 
   switch (type) {
-    case 'urlImage':
-      td.innerHTML = createImageCar(value);
+    case 'image':
+      td.innerHTML = createImageCar(value.src, value.brand, value.model);
       break;
     case 'color':
       td.innerHTML = createBoxColorCar(value);
@@ -96,3 +132,21 @@ function createColumnCar(type, value) {
 
   return td;
 }
+
+async function main() {
+  const result = await get(url);
+
+  if (result.error) {
+    console.log('Erro ao buscar carros', result.message);
+    return;
+  }
+
+  if (result.length === 0) {
+    createRowCarEmpty();
+    return;
+  }
+
+  result.forEach(createRowCar);
+}
+
+main();

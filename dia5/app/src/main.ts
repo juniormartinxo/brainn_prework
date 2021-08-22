@@ -3,7 +3,7 @@ import { get, post, del } from "./http";
 
 const url = "http://localhost:3333/cars";
 
-const form = document.querySelector('[data-js="cars-form"]');
+const form = document.querySelector<HTMLFormElement>('[data-js="cars-form"]');
 const table = document.querySelector('[data-js="table"]');
 
 const getFormElement =
@@ -50,7 +50,14 @@ function createColor(value: string) {
 
 form!.addEventListener("submit", async (e) => {
   e.preventDefault();
+  const target = e.target as HTMLFormElement;
+
+  if (!target) {
+    return;
+  }
+
   const getElement = getFormElement(e);
+  const image = getFormElement("image");
 
   const data = {
     image: getElement("image").value,
@@ -74,9 +81,9 @@ form!.addEventListener("submit", async (e) => {
 
   createTableRow(data);
 
-  e.target.reset();
+  (<HTMLFormElement>e.target).reset();
 
-  data.image.focus();
+  image.focus();
 });
 
 type dataCar = {
