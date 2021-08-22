@@ -50,6 +50,7 @@ function checkAlreadyRegistered(req, res, next) {
 }
 
 router.post('/', checkBody, checkAlreadyRegistered, (req, res) => {
+  console.log(req.body);
   data[req.body.id] = {
     id: req.body.id,
     image: req.body.image,

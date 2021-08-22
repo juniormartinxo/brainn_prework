@@ -12,7 +12,7 @@ const color = document.querySelector('[data-js="inputCarColor"]');
 
 const url = 'http://localhost:3333/cars';
 
-btnInsertCar.addEventListener('click', () => {
+btnInsertCar.addEventListener('click', async () => {
   const randomId = Math.trunc(Math.random() * 1e9);
   const tbodyCarsHtml = tbodyCars.innerHTML;
 
@@ -27,11 +27,11 @@ btnInsertCar.addEventListener('click', () => {
   };
 
   try {
-    const result = post(url, dataCars);
+    const result = await post(url, dataCars);
 
     if (result.error) {
       //console.log('deu erro na hora de cadastrar', result.message);
-      alertMessage('Ocorreu um erro ao cadastrar o veículo!');
+      alertMessage(result.message);
       return;
     }
 
