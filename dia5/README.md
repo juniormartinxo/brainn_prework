@@ -55,3 +55,9 @@ tente, pesquise se não entender algo, procure uma solução.
 Lembre-se que o importante não é **fazer tudo correto ou perfeito** e sim que você
 se sinta provocada ou provocado **a aprender mais**, e **buscar um conhecimento que 
 talvez você ainda não tenha**, ok?
+
+<p>
+  <a href="https://www.twitch.tv/videos/1125262119?t=00h34m30s">
+    <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
+  </a>
+</p>
