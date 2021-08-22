@@ -4,7 +4,7 @@ const fs = require('fs');
 
 let data = {};
 
-fs.readFile('./cars_empty.json', 'utf8', function (err, dataJson) {
+fs.readFile('./cars.json', 'utf8', function (err, dataJson) {
   if (err) {
     return console.log('Erro ao ler arquivo ' + err);
   }
@@ -50,7 +50,7 @@ function checkAlreadyRegistered(req, res, next) {
 }
 
 router.post('/', checkBody, checkAlreadyRegistered, (req, res) => {
-  data[req.body.plate.toUpperCase()] = {
+  data[req.body.id] = {
     id: req.body.id,
     image: req.body.image,
     brand: req.body.brand,

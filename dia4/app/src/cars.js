@@ -26,9 +26,21 @@ btnInsertCar.addEventListener('click', () => {
     color: color.value,
   };
 
-  createRowCar(dataCars);
+  try {
+    const result = post(url, dataCars);
 
-  formCar.reset();
+    if (result.error) {
+      //console.log('deu erro na hora de cadastrar', result.message);
+      alertMessage('Ocorreu um erro ao cadastrar o veículo!');
+      return;
+    }
+
+    createRowCar(dataCars);
+
+    formCar.reset();
+  } catch (e) {
+    alertMessage('Algo deu errado!');
+  }
 });
 
 function createRowCar(dataCars) {
@@ -49,12 +61,11 @@ function createRowCar(dataCars) {
     { type: 'color', value: dataCars.color },
   ];
 
-  console.log(infoCar);
-
   const btnDeleteCar = createButtonDeleteCar(dataCars.id);
 
   const rowCar = document.createElement('tr');
   rowCar.dataset.id = dataCars.id;
+  rowCar.classList.add('rowCar');
 
   infoCar.map(info => {
     rowCar.appendChild(createColumnCar(info.type, info.value));
@@ -67,6 +78,14 @@ function createRowCar(dataCars) {
   rowCar.appendChild(tdBtnDeleteCar);
 
   tbodyCars.appendChild(rowCar);
+
+  // Verifica se existe alguma linha vazia
+  const rowCarEmpty = document.querySelector(`tr[data-id="empty"]`);
+
+  // Se existir, exclui a linha vazia existente
+  if (rowCarEmpty !== null) {
+    tbodyCars.removeChild(rowCarEmpty);
+  }
 }
 
 function removeRowCar(e) {
@@ -77,10 +96,20 @@ function removeRowCar(e) {
   tbodyCars.removeChild(rowCar);
 
   btnDelRowCar.removeEventListener('click', removeRowCar);
+
+  // Verifica se existe ainda alguma linha com carro inserido
+  const verifyRowCar = document.querySelector('.rowCar');
+
+  // Se não existir, exibe a linha de espaço vazio
+  if (verifyRowCar === null) {
+    createRowCarEmpty();
+  }
 }
 
 function createRowCarEmpty() {
   const rowCarEmpty = document.createElement('tr');
+  rowCarEmpty.dataset.id = 'empty';
+
   const colCarEmpty = document.createElement('td');
   colCarEmpty.colSpan = 8;
   colCarEmpty.innerHTML = `Nenhum carro encontrado!`;
@@ -131,6 +160,19 @@ function createColumnCar(type, value) {
   }
 
   return td;
+}
+
+function alertMessage(msg) {
+  const alertContainer = document.querySelector('.alert');
+
+  alertContainer.style.animation = 'bounce 1s linear';
+  alertContainer.classList.remove('hide');
+  alertContainer.classList.remove('hidden');
+  alertContainer.innerHTML = `<p>${msg}</p>`;
+
+  setTimeout(() => {
+    alertContainer.classList.add('hidden');
+  }, 3000);
 }
 
 async function main() {

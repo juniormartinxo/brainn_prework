@@ -36,6 +36,18 @@ th {
   text-align: center;
 }
 
+.alert {
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+  top: 10px;
+  background-color: #ff3366;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+}
+
 .strong {
   font-weight: bold;
 }
@@ -189,4 +201,34 @@ textarea.deeppink-border.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid #ff3366;
   -webkit-box-shadow: 0 1px 0 0 #ff3366;
   box-shadow: 0 1px 0 0 #ff3366;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
 }
