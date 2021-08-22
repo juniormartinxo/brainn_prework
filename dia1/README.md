@@ -115,8 +115,8 @@ btnLink.addEventListener('click', () => {
 
 ### Com a div #app desabilitada:
 
-![image](https://user-images.githubusercontent.com/4163340/129776083-e807baaf-c270-4fe8-adc4-3cbac6c172d9.png)
+<img src="https://user-images.githubusercontent.com/4163340/129776083-e807baaf-c270-4fe8-adc4-3cbac6c172d9.png" width="500"/>
 
 ### Com a div #app habilitada:
 
-![image](https://user-images.githubusercontent.com/4163340/129776949-cfdf8256-6d8d-48ec-b096-2ef2fb2271b4.png)
+<img src="https://user-images.githubusercontent.com/4163340/129776949-cfdf8256-6d8d-48ec-b096-2ef2fb2271b4.png" width="500"/>
