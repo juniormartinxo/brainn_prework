@@ -31,8 +31,9 @@ inputName.addEventListener('keyup', () => {
   inputName.value = corrigirNome(inputName.value);
 });
 
+selectCores.setAttribute('multiple', '');
+
 selectCores.innerHTML = `
-    <option value="">Selecione uma cor</option>
     <option value="blue">Azul</option>
     <option value="green">Verde</option>
     <option value="red">Vermelho</option>
