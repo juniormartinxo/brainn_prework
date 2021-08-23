@@ -20,6 +20,12 @@ Se for digitado no campo: `rubens de oliveira`, o que deverá ser exibido no cam
 
 Se for digitado `rOMualdo ferrEira DoS sanTOS NetO`, o que deverá ser exibido no campo é `Romualdo Ferreira dos Santos Neto`
 
+<p>
+  <a href="https://www.twitch.tv/videos/1123241660?t=00h14m17s">
+    <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
+  </a>
+</p>
+
 <hr/>
 
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 02 - HOF (Higher Order Function)
@@ -38,6 +44,12 @@ Exemplo: se apenas uma cor for selecionada, um quadrado pintado com essa cor dev
 Se duas cores forem selecionadas, dois quadrados devem aparecer na tela, um com cada uma das cores selecionadas.
 Se houver uma "desseleção", a cor que foi "desselecionada" deve ser removida da tela.
 
+<p>
+  <a href="https://www.twitch.tv/videos/1123241660?t=00h38m50s">
+    <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
+  </a>
+</p>
+
 <hr/>
 
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 03
@@ -54,10 +66,8 @@ Ao preencher todos os dados e submeter o formulário, você deve criar uma nova 
 com os dados do carro criado, limpar o formulário para receber um novo cadastro, e dar foco no primeiro campo 
 do formulário (campo imagem).
 
-<hr/>
-
 <p>
-  <a href="https://www.twitch.tv/videos/1121188335?t=00h27m35s">
+  <a href="https://www.twitch.tv/videos/1123241660?t=01h04m28s">
     <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
   </a>
 </p>

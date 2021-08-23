@@ -48,6 +48,7 @@ GET http://localhost:3000/main.js net::ERR_ABORTED 404 (Not Found)
     <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
   </a>
 </p>
+<hr/>
 
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 02
 
@@ -64,6 +65,7 @@ Uncaught SyntaxError: Cannot use import statement outside a module
     <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
   </a>
 </p>
+<hr/>
 
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 03
 
@@ -80,6 +82,7 @@ main.js:3 Uncaught TypeError: Cannot set property 'innerHTML' of null
     <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
   </a>
 </p>
+<hr/>
 
 ### <img src="https://user-images.githubusercontent.com/4163340/130161271-0e37ced9-4426-4f4b-9dac-510916ffad4d.png" height="16"/> Exercício 04
 
@@ -112,11 +115,14 @@ btnLink.addEventListener('click', () => {
     <img src="https://user-images.githubusercontent.com/4163340/130163911-0f0dad41-58d5-4703-852f-ac63a96aa316.png"/>
   </a>
 </p>
+<hr/>
+
+## Resultado do exercício
 
 ### Com a div #app desabilitada:
 
-![image](https://user-images.githubusercontent.com/4163340/129776083-e807baaf-c270-4fe8-adc4-3cbac6c172d9.png)
+<img src="https://user-images.githubusercontent.com/4163340/129776083-e807baaf-c270-4fe8-adc4-3cbac6c172d9.png" width="500"/>
 
 ### Com a div #app habilitada:
 
-![image](https://user-images.githubusercontent.com/4163340/129776949-cfdf8256-6d8d-48ec-b096-2ef2fb2271b4.png)
+<img src="https://user-images.githubusercontent.com/4163340/129776949-cfdf8256-6d8d-48ec-b096-2ef2fb2271b4.png" width="500"/>
